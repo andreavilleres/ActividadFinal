@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>1ra pagina Java Web</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body style="display:grid; grid-template-rows: auto 1fr auto; min-height: 100vh;">
+        <h1 class="text-center m-5">Login</h1>
+        <main class="container d-flex justify-content-center align-items-center">
+            <form method="POST" action="UsuarioController" class="bg-light p-5 rounded" >
+                <div class="mb-3">
+                    <label for="username" class="formlabel">Usuario post:</label>
+                    <input type="text" id="username" name="username" class="formcontrol">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="password" class="formlabel">Clave post:</label>
+                    <input type="password" id="password" name="password" class="formcontrol">
+                </div>
+                
+                <div class="mb-3 form-check">
+                    <input type="checkbox" id="exampleCheck1" name="check" class="form-check-input">
+                    <label for="exampleCheck1" class="form-check-label">Check me out</label>
+                </div>
+                
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <button class="btn btn-dark" type="submit">Ingresar</button>
+                    </div>
+                    <div class="col-auto">
+                        <a href="#" class="link-primary">Registrarme</a>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
